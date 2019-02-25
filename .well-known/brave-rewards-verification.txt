@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dadams.solutions
+Token: 17712e346133e6451ac0b72635f58298bddc1c819fa1bdaa2e97c6a9e5dc3c96
