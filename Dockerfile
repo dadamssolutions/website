@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ENV VIRTUAL_HOST=dadams.solutions LETSENCRYPT_HOST=dadams.solutions
+ENV VIRTUAL_HOST=dadams.solutions,www.dadams.solutions LETSENCRYPT_HOST=dadams.solutions,www.dadams.solutions
 
 COPY . /usr/share/nginx/html
 
