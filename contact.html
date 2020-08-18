@@ -1,89 +1,98 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Dadams, solutions, custom software, programmer, coder">
-    <meta name="author" content="Dadams solutions llc">
-    <link rel="icon" href="resources/favicon.ico">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Dadams, solutions, custom software, programmer, coder">
+        <meta name="author" content="Dadams solutions llc">
+        <link rel="icon" href="resources/favicon.ico">
 
-    <title>Dadams solutions llc</title>
+        <title>Dadams solutions llc</title>
 
-    <!-- Bootstrap core CSS & JS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script> 
-        function onSubmit(token) {
-            document.getElementById("contact-form").submit();
-        }
-    </script>
+        <!-- Bootstrap core CSS & JS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script>
+            function onSubmit(token) {
+                var form = document.getElementById("contact-form");
+                if (form.checkValidity()) {
+                    form.submit();
+                } else {
+                    var text = document.getElementById("required-message");
+                    text.classList.remove("text-muted");
+                    text.classList.add("text-danger");
+                    text.classList.add("font-weight-bold");
+                }
+            }
+        </script>
+        <!-- Custom styles for this template -->
+        <link href="https://fonts.googleapis.com/css?family=Lato|Nunito:200,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="resources/custom.css">
 
-    <!-- Custom styles for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Lato|Nunito:200,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="resources/custom.css">
+        <!-- Matomo -->
+        <script type="text/javascript">
+            var _paq = window._paq || [];
+            /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+            _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+            _paq.push(["setCookieDomain", "*.dadams.solutions"]);
+            _paq.push(["setDomains", ["*.dadams.solutions"]]);
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//matomo.dadams.solutions/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', '1']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+            })();
+        </script>
+        <noscript>
+            <p><img src="//matomo.dadams.solutions/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p>
+        </noscript>
+        <!-- End Matomo Code -->
+    </head>
 
-    <!-- Matomo -->
-<script type="text/javascript">
-  var _paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setCookieDomain", "*.dadams.solutions"]);
-  _paq.push(["setDomains", ["*.dadams.solutions"]]);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-  (function() {
-    var u="//matomo.dadams.solutions/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '1']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><p><img src="//matomo.dadams.solutions/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
-<!-- End Matomo Code -->
-</head>
+    <body>
 
-<body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="resources/Dadams_logo.png" width="200" height="30" class="mt-2" alt="Dadams solutions llc">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">
-            <img src="resources/Dadams_logo.png" width="200" height="30" class="mt-2" alt="Dadams solutions llc">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-        <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <main role="main">
-    <div class="container">
-        <h1>Send us a message!</h1>
-        <form id="contact-form" method="POST" action="https://localhost:8080/contact/qwertyuiopasdfgh" role="form">
-            <input type="hidden" name="kontactly_form_name", value="dadams-contact">
+        <main role="main">
+            <div class="container">
+                <h1>Send us a message!</h1>
+                <form id="contact-form" method="POST" action="https://kontactly.dadams.solutions/contact/qwertyuiopasdfgh" role="form">
+                    <input type="hidden" name="kontactly_form_name" , value="dadams-contact">
                     <div class="controls">
 
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_name">Name</label>
-                                    <input id="form_name" type="text" name="kontactly_name" class="form-control" placeholder="Please enter your name" required="required" data-error="Name is required.">
+                                    <input id="form_name" type="text" name="kontactly_name" class="form-control" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -92,14 +101,14 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_subject">Subject</label>
-                                    <input id="form_subject" type="text" name="kontactly_subject" class="form-control" placeholder="Please enter the subject" required="required" data-error="Valid email is required.">
+                                    <input id="form_subject" type="text" name="kontactly_subject" class="form-control" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="form_email">Email</label>
-                                    <input id="form_email" type="email" name="kontactly_email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                                    <input id="form_email" type="email" name="kontactly_email" class="form-control" required>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -108,7 +117,7 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label for="form_message">Message</label>
-                                    <textarea id="form_message" name="kontactly_message" class="form-control" placeholder="Your message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                    <textarea id="form_message" name="kontactly_message" class="form-control" rows="4" required></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div>
                             </div>
@@ -126,13 +135,13 @@
 
                 </form>
                 <hr>
-                </div>
+            </div>
 
-    </main>
+        </main>
 
-    <footer class="container">
-        <p class="text-muted small">&copy; 2020, Dadams solutions llc</p>
-    </footer>
-</body>
+        <footer class="container">
+            <p class="text-muted small">&copy; 2020, Dadams solutions llc</p>
+        </footer>
+    </body>
 
 </html>
