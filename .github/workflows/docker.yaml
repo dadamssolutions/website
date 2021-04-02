@@ -11,15 +11,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Set ReCaptcha Site Key
+        run: sed -i 's/6LfrqrwZAAAAAIG5jGLIsLFLpVj0V0K52AddS0he/6Lc9j7YZAAAAAOx71vGQuwqqcaALIwLxRDgPpsmL/' contact.html
       - name: Login to registry
         uses: docker/login-action@v1
         with:
-          registry: ${{ secrets.DOCKERREGISTRY }}
-          username: ${{ secrets.DOCKERREGISTRY_USERNAME }}
-          password: ${{ secrets.DOCKERREGISTRY_PASSWORD }}
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
-          tags: registry.dadams.solutions/dadamssolutions-website:latest
+          tags: ghcr.io/${{ github.repository_owner }}/website:latest
