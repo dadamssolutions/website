@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set ReCaptcha Site Key
         run: sed -i 's/6LfrqrwZAAAAAIG5jGLIsLFLpVj0V0K52AddS0he/6Lc9j7YZAAAAAOx71vGQuwqqcaALIwLxRDgPpsmL/' contact.html
       - name: Login to registry
