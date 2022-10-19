@@ -17,7 +17,7 @@ jobs:
       # - name: Set ReCaptcha Site Key
         # run: sed -i 's/6LfrqrwZAAAAAIG5jGLIsLFLpVj0V0K52AddS0he/6Lc9j7YZAAAAAOx71vGQuwqqcaALIwLxRDgPpsmL/' contact.html
       - name: Login to registry
-        uses: docker/login-action@v2.0.0
+        uses: docker/login-action@v2.1.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
