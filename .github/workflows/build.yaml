@@ -18,4 +18,4 @@ jobs:
           acorn-version: main
       - name: Build
         run: |
-          acorn build -t ghcr.io/${{ github.repository_owner }}website:latest .
+          acorn build -t ghcr.io/${{ github.repository_owner }}/website:latest .
