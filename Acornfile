@@ -1,9 +1,0 @@
-containers: {
-    site: {
-        image: "nginx:alpine"
-        ports: publish: "80/http"
-        dirs: {
-            "/usr/share/nginx/html": "./"
-        }
-    }
-}
