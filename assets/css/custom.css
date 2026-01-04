@@ -1,0 +1,37 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+}
+
+a.active {
+    font-weight: 700;
+}
+
+main {
+    margin-top: 60px;
+}
+
+#front-jumbo {
+    margin-top: -4.5em;
+    padding-top: 20%;
+    background-image: url("../images/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.jumbotron div {
+    padding: 20px;
+    height: 100%;
+    background-color: rgba(83, 83, 83, 0.9);
+    color: white;
+}
